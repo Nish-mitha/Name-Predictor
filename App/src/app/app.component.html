@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="header">
+  <h1>Name Predictor</h1>
+  <p>Think Of A Name In Your Mind</p>
+</div>
+
+<div  class="main-div">
+  <div *ngFor="let x of alphabets" [ngStyle]="{'float': 'left'}">
+    <!-- <button class="button" value="{{ i+1 }}">{{ i+1 }}</button> -->
+    <!-- <div *ngFor="let y of alphabets;index as j"> -->
+        <div>{{ x }}</div>
+    <!-- </div> -->
+    <br>
+  </div>
+</div>
+
+</body>
+</html>
+
+<router-outlet></router-outlet>
