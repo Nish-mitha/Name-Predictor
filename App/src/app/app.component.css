@@ -21,6 +21,38 @@ body {
     font-size: 40px;
 }
 
+/* Full-width input fields */
+input[type=number] 
+{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid black;
+    background: #f1f1f1;
+}
+
+  /* Add a background color when the inputs get focus */
+input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.submit_button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+}
+
+.submit_button:hover {
+    opacity:1;
+}
+
 .main-div {
     float: left;
     border: 1px solid black;
@@ -28,19 +60,20 @@ body {
 }
 
 .circle {
-    width: 120px;
+    /* width: 120px;
     line-height: 80px;
     border-radius: 50%;
     text-align: center;
     font-size: 32px;
     border: 3px solid #000;
-    background-color:#A6BB8D;
+    background-color:#A6BB8D; */
+    padding: 20px 20px;
 }
 
 .button {
     border: none;
     color: white;
-    padding: 35px 62px;
+    padding: 10px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

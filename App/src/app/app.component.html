@@ -6,21 +6,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="header">
-  <h1>Name Predictor</h1>
-  <p>Think Of A Name In Your Mind</p>
-</div>
-
-<div  class="main-div">
-  <div *ngFor="let x of alphabets" [ngStyle]="{'float': 'left'}">
-    <!-- <button class="button" value="{{ i+1 }}">{{ i+1 }}</button> -->
-    <!-- <div *ngFor="let y of alphabets;index as j"> -->
-        <div>{{ x }}</div>
-    <!-- </div> -->
-    <br>
+  <div class="header">
+    <h1>Name Predictor</h1>
+    <p>Think Of A Name In Your Mind</p>
   </div>
-</div>
-
+  <br>
+  <!-- <div align="center">
+    <form>
+      <input type="number" placeholder="Enter the Number of Letters in your Name" min=1 max=15 required #numberOfLetters>
+      <br>
+      <button type="submit" class="submit_button" (click)="onSubmit(numberOfLetters.value)">Submit</button>  
+    </form>
+  </div> -->
+  <br>
+  <span *ngFor="let x of alphabets; index as i">
+    <span> 
+      <br>
+      <button class="button" (click)="onSelectFirst(x)">{{ i+1 }}</button>
+    </span>
+    <span *ngFor="let y of x; index as i">
+      <span class="circle">{{ y }}</span>
+    </span>
+  </span>
+  <br>
+  <span *ngFor="let x of userSelectedOptions; index as i">
+    <span> 
+      <br>
+      <button class="button" (click)="onSelectSecond(i)">{{ i+1 }}</button>
+    </span>
+    <span *ngFor="let y of x; index as i">
+      <span class="circle">{{ y }}</span>
+    </span>
+  </span>
+<strong>{{ name }}</strong>
 </body>
 </html>
 
