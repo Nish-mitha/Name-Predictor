@@ -11,25 +11,23 @@
     <p>Think Of A Name In Your Mind</p>
   </div>
   <br>
-  <!-- <div align="center">
-    <form>
-      <input type="number" placeholder="Enter the Number of Letters in your Name" min=1 max=15 required #numberOfLetters>
-      <br>
-      <button type="submit" class="submit_button" (click)="onSubmit(numberOfLetters.value)">Submit</button>  
-    </form>
-  </div> -->
-  <br>
-  <span *ngFor="let x of alphabets; index as i">
-    <span> 
-      <br>
-      <button class="button" (click)="onSelectFirst(x)">{{ i+1 }}</button>
-    </span>
-    <span *ngFor="let y of x; index as i">
-      <span class="circle">{{ y }}</span>
-    </span>
-  </span>
-  <br>
-  <span *ngFor="let x of userSelectedOptions; index as i">
+
+  <div class="main-box">
+    <br>
+    <p class="text">Text</p>
+    <div class="sub-div">
+      <!-- <span *ngFor="let x of alphabets; index as i">
+        <span> 
+          <br>
+          <button class="button" (click)="onSelectFirst(x)">{{ i+1 }}</button>
+        </span>
+        <span *ngFor="let y of x; index as i">
+          <span class="circle">{{ y }}</span>
+        </span>
+      </span> -->
+    </div>
+  </div>
+  <!-- <span *ngFor="let x of userSelectedOptions; index as i">
     <span> 
       <br>
       <button class="button" (click)="onSelectSecond(i)">{{ i+1 }}</button>
@@ -38,7 +36,7 @@
       <span class="circle">{{ y }}</span>
     </span>
   </span>
-<strong>{{ name }}</strong>
+<strong>{{ name }}</strong> -->
 </body>
 </html>
 
