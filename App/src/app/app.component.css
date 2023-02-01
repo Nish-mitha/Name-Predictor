@@ -29,7 +29,7 @@ body {
 }
 
 .sub-div {
-    background-color: rgba(188, 4, 105, 0.3);
+    background-color: rgba(255, 0, 123, 0.222);
     box-sizing: border-box;
     width: auto;
     height: 400px;
@@ -40,24 +40,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: crimson;
-}
-
-/* Full-width input fields */
-input[type=number] 
-{
-    width: 50%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: 1px solid black;
-    background: #f1f1f1;
-}
-
-  /* Add a background color when the inputs get focus */
-input[type=number]:focus {
-    background-color: #ddd;
-    outline: none;
+    color: rgb(255, 2, 107);
 }
 
 .submit_button {
@@ -82,25 +65,26 @@ input[type=number]:focus {
 }
 
 .circle {
-    /* width: 120px;
+    width: 60px;
     line-height: 80px;
-    border-radius: 50%;
+    border-radius: 12px;
     text-align: center;
-    font-size: 32px;
-    border: 3px solid #000;
-    background-color:#A6BB8D; */
-    padding: 20px 20px;
+    font-size: 22px;
+    border: 1px solid #000;
+    background-color:#A6BB8D;
+    padding: 2px 20px;
+    margin: 0px 30px;
 }
 
 .button {
     border: none;
     color: white;
-    padding: 10px 22px;
+    padding: 2px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 26px;
-    margin: 20px 40px;
+    font-size: 23px;
+    margin: 0px 44px;
     cursor: pointer;
     background-color: #4CAF50;
 }

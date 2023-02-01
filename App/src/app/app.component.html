@@ -14,17 +14,15 @@
 
   <div class="main-box">
     <br>
-    <p class="text">Text</p>
+    <p class="text">Press the line numbers which has letters of your name in the order</p>
     <div class="sub-div">
-      <!-- <span *ngFor="let x of alphabets; index as i">
-        <span> 
-          <br>
-          <button class="button" (click)="onSelectFirst(x)">{{ i+1 }}</button>
-        </span>
+      <span *ngFor="let x of alphabets; index as i">
+        <br>
+        <button class="button" (click)="onSelectFirst(x)">{{ i+1 }}</button>
         <span *ngFor="let y of x; index as i">
           <span class="circle">{{ y }}</span>
         </span>
-      </span> -->
+      </span>
     </div>
   </div>
   <!-- <span *ngFor="let x of userSelectedOptions; index as i">
