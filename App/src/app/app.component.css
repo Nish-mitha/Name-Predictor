@@ -10,7 +10,7 @@ body {
 
 /* Header/logo Title */
 .header {
-    padding: 80px;
+    padding: 60px;
     text-align: center;
     background: #1abc9c;
     color: white;
@@ -24,15 +24,16 @@ body {
 .main-box {
     background-color: rgba(26, 188, 156, 0.3);
     box-sizing: border-box;
-    width: auto;
-    height: 560px;
+    width: 50%;
+    height: 620px;
+    margin-left: 460px;
 }
 
 .sub-div {
     background-color: rgba(255, 0, 123, 0.222);
     box-sizing: border-box;
     width: auto;
-    height: 400px;
+    height: 500px;
     margin: 40px 60px;
 }
 
