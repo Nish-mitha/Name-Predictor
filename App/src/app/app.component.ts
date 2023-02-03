@@ -18,6 +18,7 @@ export class AppComponent {
   public answerX = 0;
   public userSelectedOptions: string[][] = [[],[],[],[],[]];
   public name:string = "";
+  public show_main = 1;
 
   public onSelectFirst(value: string[]): void {
     for(const key in value) {
@@ -36,5 +37,9 @@ export class AppComponent {
     this.name = this.name + this.userSelectedOptions[index][this.answerX];
     this.answerX++;
     console.log(this.name);
+  }
+
+  public confirm_1(): void {
+    this.show_main = 0;
   }
 }
