@@ -12,10 +12,10 @@
   </div>
   <br>
 
-  <div class="main-box" align="center" *ngIf="{show_main}">
+  <!-- <div class="main-box" align="center" *ngIf="{show_main}"> -->
     <br>
     <p class="text">Press the line numbers which has letters of your name in the order</p>
-    <div class="sub-div">
+    <!-- <div class="sub-div"> -->
       <span *ngFor="let x of alphabets; index as i">
         <br>
         <button class="button" (click)="onSelectFirst(x)">{{ i+1 }}</button>
@@ -24,11 +24,11 @@
         </span>
       </span>
       <br>
-      <input type="submit" class="submit_button" (click)="confirm_1()" value="Submit">
-    </div>
-  </div>
+      <!-- <input type="submit" class="submit_button" (click)="confirm_1()" value="Submit"> -->
+    <!-- </div> -->
+  <!-- </div> -->
   
-  <!-- <span *ngFor="let x of userSelectedOptions; index as i">
+  <span *ngFor="let x of userSelectedOptions; index as i">
     <span> 
       <br>
       <button class="button" (click)="onSelectSecond(i)">{{ i+1 }}</button>
@@ -37,8 +37,8 @@
       <span class="circle">{{ y }}</span>
     </span>
   </span>
-<strong>{{ name }}</strong> -->
+<!-- <strong>{{ name }}</strong> -->
 </body>
 </html>
-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
+<!-- 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 -->
 <router-outlet></router-outlet>
